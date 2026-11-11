@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Now</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⛅</text></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="weather-app">
+    <div class="search-bar">
+      <input type="text" id="cityInput" placeholder="Search for a city..." autocomplete="off">
+      <button id="searchBtn">Search</button>
+    </div>
+
+    <div class="current-weather">
+      <div class="location-time">
+        <h1 id="cityName">Manila, PH</h1>
+        <p id="currentDate">Loading date...</p>
+      </div>
+      
+      <div class="weather-main">
+        <div class="temp">
+          <h1 id="temperature">--°</h1>
+          <p id="weatherDesc">Loading...</p>
+        </div>
+        <div class="weather-icon" id="weatherIcon">⏳</div>
+      </div>
+
+      <div class="weather-details">
+        <div class="detail-item">
+          <span class="label">Humidity</span>
+          <span class="value" id="humidity">--%</span>
+        </div>
+        <div class="detail-item">
+          <span class="label">Wind</span>
+          <span class="value" id="wind">-- km/h</span>
+        </div>
+        <div class="detail-item">
+          <span class="label">Feels Like</span>
+          <span class="value" id="feelsLike">--°</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
